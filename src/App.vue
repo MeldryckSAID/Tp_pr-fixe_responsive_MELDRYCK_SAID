@@ -64,7 +64,13 @@
                <input type="search" placeholder="Search with Search Bar" class=" h-12 w-full rounded-lg border-2 border-indigo-100 px-4 placeholder:text-xs "/>
                <ChevronDownIcon class="-ml-8 h-5 w-5 rounded-full bg-indigo-100 stroke-indigo-600 p-1 "/>
             </div>
-            
+          
+        </div>
+
+         <div class="flex items-center lg:hidden">
+          <input type="search" placeholder="Search Location" class=" h-16  w-full  rounded-lg border-2 border-indigo-100 px-4 placeholder:text-xs "/>
+
+          <SearchIcon class=" -ml-12  h-10 w-10 rounded-sm bg-indigo-600 stroke-indigo-100 p-1"/>
         </div>
 
       </div>

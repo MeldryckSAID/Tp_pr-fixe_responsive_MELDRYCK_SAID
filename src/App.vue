@@ -53,6 +53,22 @@
       </div>
     </header>
      
+     <main>
+      <div class="mx-auto mb-7 flex w-4/5 flex-col gap-7">
+
+        <div class="flex flex-col gap-7 lg:flex-row lg:justify-between">
+
+            <h2 class="text-center text-4xl font-bold text-indigo-900">Search properties to rent</h2>
+
+           <div class="flex items-center">
+               <input type="search" placeholder="Search with Search Bar" class=" h-12 w-full rounded-lg border-2 border-indigo-100 px-4 placeholder:text-xs "/>
+               <ChevronDownIcon class="-ml-8 h-5 w-5 rounded-full bg-indigo-100 stroke-indigo-600 p-1 "/>
+            </div>
+            
+        </div>
+
+      </div>
+     </main>
      
 
   
@@ -60,9 +76,9 @@
 
 <script>
 import IconLogo from "./components/icons/IconLogo.vue";
-import { FilmIcon } from "@heroicons/vue/outline";
-import menu2 from  "./components/menu.vue";
+import { FilmIcon ,ChevronDownIcon, SearchIcon } from "@heroicons/vue/outline";
+import menu2 from  "./components/icons/menu.vue";
 export default {
-  components: { IconLogo, FilmIcon, menu2 },
+  components: { IconLogo, FilmIcon, menu2,ChevronDownIcon, SearchIcon },
 };
 </script>

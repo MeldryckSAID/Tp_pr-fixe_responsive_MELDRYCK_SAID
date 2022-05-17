@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="flex  flex-wrap justify-between">
     <icon-logo />
     <FilmIcon class="h-5 w-5 fill-blue-300 stroke-blue-600" />
     <nav>

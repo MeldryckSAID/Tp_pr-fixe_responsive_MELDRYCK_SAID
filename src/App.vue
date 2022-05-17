@@ -74,17 +74,128 @@
         </div>
 
       </div>
+
+       <div class=" hidden h-24 w-full  items-center  gap-4  rounded-lg  border-2 border-indigo-100  px-4 font-inter lg:flex" >
+          
+          <div class="w-1/2 min-w-max border-r-2 border-gray-300 px-4">
+            <span class="text-base text-gray-900">Location</span>
+            <p class="text-lg font-bold">New York, USA</p>
+          </div>
+         
+         <div class="w-1/2 min-w-max border-r-2 border-gray-300 px-4">
+            <span class="text-base text-gray-900">When</span>
+            <p class="text-lg font-bold">Select Move-in Date</p>
+          </div>
+         
+         <div class="w-1/2 min-w-max border-r-2 border-gray-300 px-4 pr-10">
+            <span class="text-base text-gray-900">Price</span>
+            <p class="text-lg font-bold">$500-$2,500</p>
+          </div>
+
+       </div>  
+
+       
+          <div class="flex w-1/2 items-center justify-center">
+            <p class="rounded-sm bg-indigo-600 px-6  py-3 text-center text-indigo-100 "  >
+              Search
+            </p>
+      
+        
+      <div class=" mx-auto  grid  w-4/5  grid-cols-[repeat(auto-fit,minmax(300px,1fr))] justify-center gap-7">
+
+        <Cards :price="2500" :favori="true" :image="'src/img/house2.png'" />
+        <Cards
+          :price="2850"
+          :adresse="'2820 Lake Sevilla, Palm Harbor, TX'"
+          :image="'src/img/house3.jpg'"
+        />
+        <Cards
+          :price="4500"
+          :favori="true"
+          :adresse="'2820 Lake Sevilla, Palm Harbor, TX'"
+          :image="'src/img/house.png'"
+        />
+        <Cards
+          :price="2850"
+          :adresse="'2820 Lake Sevilla, Palm Harbor, TX'"
+          :image="'src/img/house4.jpg'"
+        />
+        <Cards
+          :price="2850"
+          :adresse="'2820 Perdu dans la nature'"
+          :image="'src/img/house5.jpg'"
+        />
+        <Cards :price="2500" :favori="true" :image="'src/img/house2.png'" />
+        <Cards
+          :price="2850"
+          :adresse="'2820 Lake Sevilla, Palm Harbor, TX'"
+          :image="'src/img/house3.jpg'"
+        />
+        <Cards
+          :price="4500"
+          :favori="true"
+          :adresse="'2820 Lake Sevilla, Palm Harbor, TX'"
+          :image="'src/img/house.png'"
+        />
+        <Cards
+          :price="2850"
+          :adresse="'2820 Lake Sevilla, Palm Harbor, TX'"
+          :image="'src/img/house4.jpg'"
+        />
+        <Cards
+          :price="2850"
+          :adresse="'2820 Lake Sevilla, Perl Harbor, TX'"
+          :image="'src/img/house5.jpg'"
+        />
+      
+      </div>
+          </div>
      </main>
      
 
   
 </template>
 
+<style >
+.bouton1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  background: #6366f1;
+  border-radius: 8px;
+}
+.bouton2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 22px;
+  border: 2px solid #c7d2fe;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    display: none;
+  }
+  .menu-text {
+    display: flex;
+  }
+}
+</style>
+
 <script>
+
+
 import IconLogo from "./components/icons/IconLogo.vue";
 import { FilmIcon ,ChevronDownIcon, SearchIcon } from "@heroicons/vue/outline";
 import menu2 from  "./components/icons/menu.vue";
+import cards from"./components/cards.vue";
+
+
 export default {
-  components: { IconLogo, FilmIcon, menu2,ChevronDownIcon, SearchIcon },
+  components: { IconLogo, FilmIcon, menu2,ChevronDownIcon, SearchIcon,cards },
 };
 </script>

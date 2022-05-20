@@ -12,17 +12,7 @@
           </div>
           <p class="text-2xl font-bold">Beverly Springfield</p>
         </div>
-        <div
-          class="
-            flex
-            h-12
-            w-12
-            items-center
-            justify-center
-            rounded-full
-            border-2 border-indigo-100
-          "
-        >
+        <div  class=" flex h-12 w-12 items-centerjustify-center rounded-full border-2 border-indigo-100" >
           <HeartIcon class="h-6 stroke-indigo-500" :class="{'fill-red-500 stroke-red-500': favori}"></HeartIcon>
         </div>
       </div>
@@ -66,7 +56,7 @@
       favori: Boolean,
       image: {
         type : String,
-        default: "src/img/home.png"},
+        default: "/src/img/home.png"},
 
     },
     components: { HeartIcon, bain, lit, space },

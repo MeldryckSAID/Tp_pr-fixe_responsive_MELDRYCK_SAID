@@ -1,39 +1,20 @@
 <template>
- <header
-      class="
-        sticky
-        top-0
-        z-40
-        h-16
-        w-full
-        border-b border-b-indigo-100
-        bg-gray-100
-        px-3
-      "
-    >
+
+ <header  class=" sticky top-0  z-40  h-16  w-full border-b border-b-indigo-100  bg-gray-100 px-3  " >
+
       <div class="flex h-full w-full items-center justify-between">
+
         <div class="flex items-center">
          <icon-logo  />
           <span class="font-bold">Estatery</span>
         </div>
         <div class="lg:hidden">
 
-         <menu2 class="sm:hidden"/>
+         <menu2 class=" w-8 sm:hidden"/>
          
         </div>
-        <nav
-          class="
-            absolute
-            left-0
-            top-16
-            w-full
-            -translate-y-[200%]
-            bg-slate-300
-            pl-2
-            lg:relative lg:top-0 lg:w-fit lg:translate-y-0 lg:bg-transparent
-          "
-         
-        >
+        <nav class="  absolute left-0  top-16  w-full  -translate-y-[200%] bg-slate-300  pl-2  lg:relative lg:top-0 lg:w-fit lg:translate-y-0 lg:bg-transparent  "  >
+
           <ul class="flex flex-col gap-8 py-4 font-bold lg:flex-row">
             <li>Rent</li>
             <li>Buy</li>
@@ -42,7 +23,8 @@
             <li>Ressources</li>
           </ul>
         </nav>
-        <div class="menu-text gap-4">
+
+        <div class=" menu-text gap-4">
           <button class="bouton2 mt-1 mb-1 font-bold text-[#6366F1]">
             Login
           </button>
@@ -53,7 +35,8 @@
       </div>
     </header>
      
-     <main>
+     <main class="bg-gray-50 py-14 px-4 font-inter">
+
       <div class="mx-auto mb-7 flex w-4/5 flex-col gap-7">
 
         <div class="flex flex-col gap-7 lg:flex-row lg:justify-between">
@@ -73,7 +56,7 @@
           <SearchIcon class=" -ml-12  h-10 w-10 rounded-sm bg-indigo-600 stroke-indigo-100 p-1"/>
         </div>
 
-      </div>
+      
 
        <div class=" hidden h-24 w-full  items-center  gap-4  rounded-lg  border-2 border-indigo-100  px-4 font-inter lg:flex" >
           
@@ -92,64 +75,41 @@
             <p class="text-lg font-bold">$500-$2,500</p>
           </div>
 
-       </div>  
+      
 
        
           <div class="flex w-1/2 items-center justify-center">
             <p class="rounded-sm bg-indigo-600 px-6  py-3 text-center text-indigo-100 "  >
               Search
             </p>
-      
+            </div>
+           </div>    
+      </div>
         
       <div class=" mx-auto  grid  w-4/5  grid-cols-[repeat(auto-fit,minmax(300px,1fr))] justify-center gap-7">
 
-        <Cards :price="2500" :favori="true" :image="'src/img/house2.png'" />
-        <Cards
-          :price="2850"
-          :adresse="'2820 Lake Sevilla, Palm Harbor, TX'"
-          :image="'src/img/house3.jpg'"
-        />
-        <Cards
-          :price="4500"
-          :favori="true"
-          :adresse="'2820 Lake Sevilla, Palm Harbor, TX'"
-          :image="'src/img/house.png'"
-        />
-        <Cards
-          :price="2850"
-          :adresse="'2820 Lake Sevilla, Palm Harbor, TX'"
-          :image="'src/img/house4.jpg'"
-        />
-        <Cards
-          :price="2850"
-          :adresse="'2820 Perdu dans la nature'"
-          :image="'src/img/house5.jpg'"
-        />
-        <Cards :price="2500" :favori="true" :image="'src/img/house2.png'" />
-        <Cards
-          :price="2850"
-          :adresse="'2820 Lake Sevilla, Palm Harbor, TX'"
-          :image="'src/img/house3.jpg'"
-        />
-        <Cards
-          :price="4500"
-          :favori="true"
-          :adresse="'2820 Lake Sevilla, Palm Harbor, TX'"
-          :image="'src/img/house.png'"
-        />
-        <Cards
-          :price="2850"
-          :adresse="'2820 Lake Sevilla, Palm Harbor, TX'"
-          :image="'src/img/house4.jpg'"
-        />
-        <Cards
-          :price="2850"
-          :adresse="'2820 Lake Sevilla, Perl Harbor, TX'"
-          :image="'src/img/house5.jpg'"
-        />
+        <cards :price="2500" :favori="true" :image="'/src/img/home.png'" />
+
+        <cards :price="2850" :adresse="'2820 Lake Sevilla, Palm Harbor, TX'" :image="'/src/img/home3.jpg'"/>
+
+        <cards :price="4500" :favori="true" :adresse="'2820 Lake Sevilla, Palm Harbor, TX'" :image="'/src/img/home.png'"/>
+
+        <cards :price="2850" :adresse="'2820 Lake Sevilla, Palm Harbor, TX'" :image="'/src/img/home4.jpg'"/>
+
+        <cards :price="2850" :adresse="'2820 Perdu dans la nature'" :image="'/src/img/home5.jpg'" />
+
+        <cards :price="2500" :favori="true" :image="'/src/img/home2.png'" />
+
+        <cards  :price="2850" :adresse="'2820 Lake Sevilla, Palm Harbor, TX'" :image="'/src/img/home3.jpg'" />
+
+        <cards :price="4500"  :favori="true"   :adresse="'2820 Lake Sevilla, Palm Harbor, TX'"  :image="'src/img/home.png'"  />
+
+        <cards   :price="2850"  :adresse="'2820 Lake Sevilla, Palm Harbor, TX'"  :image="'/src/img/home4.jpg'"  />
+
+        <cards  :price="2850"  :adresse="'2820 Lake Sevilla, Perl Harbor, TX'"  :image="'/src/img/home5.jpg'"   />
       
       </div>
-          </div>
+          
      </main>
      
 
